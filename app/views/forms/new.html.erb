@@ -1,0 +1,33 @@
+<%= form_for :form do |f| %>
+  <p>
+    <%= f.label :fullname do %>
+      Full Name <br>
+    <%= f.text_field :fullname %>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.label :email do %>
+    Email <br>
+    <%= f.text_field :email %>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.label :projectrepo do %>
+    Project Repo <br>
+    <%= f.text_field :projectrepo %>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.label :projecturl do %>
+    Project Url <br>
+    <%= f.text_field :projecturl %>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+  <% end %>
