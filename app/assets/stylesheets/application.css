@@ -19,8 +19,8 @@
 }
 
 body {
-  background-color: #114b5f;
-  font-family: museo-sans, sans-serif;
+  background-color: #114b5f !important;
+  font-family: museo-sans, sans-serif !important;
   font-style: normal;
   font-weight: 500;
 }
@@ -28,7 +28,7 @@ body {
 /*form box */
 
 .container {
-  width: 49%;
+  width: 49% !important;
   max-width: 75%;
   text-align: center;
   background-color: #456990;
@@ -46,7 +46,9 @@ input {
 }
 
 .response {
-  color: #f45b69;
+  color: #114b5f;
+  text-transform: uppercase;
+  letter-spacing: .7rem;
 }
 
 ::-webkit-input-placeholder {
@@ -64,16 +66,53 @@ input {
 
 p {
   padding-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
 }
 
 .name {
   padding-top: 3rem;
 }
 
+/*rating areas*/
+
+.row {
+  margin-left: 1.5rem !important;
+  width: 90%;
+  padding-top: 1rem;
+}
+
+.rating {
+  padding-left: 3rem;
+  text-align: center;
+
+}
+
+.rating input {
+  width: 11%;
+  float: right;
+}
+
+.rating p {
+  color: #e4fde1;
+  float: left;
+  font-size: 1.1vw;
+  padding: 0;
+}
+
+.label {
+  padding-top: 1.45rem !important;
+}
+
 /*form button*/
 
 .button {
   background-color: #f45b69;
+  color: #e4fde1;
   margin-bottom: 1rem;
+  margin-left: 2.4rem;
   text-decoration: none;
+  width: 95% !important;
+  text-transform: uppercase;
+  letter-spacing: .7rem;
 }

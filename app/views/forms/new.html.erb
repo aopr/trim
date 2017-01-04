@@ -1,26 +1,171 @@
+                    <!-- form -->
 
 <div class="container">
 
+                  <!-- form responses -->
+
   <%= form_for :form do |f| %>
   <p class="name">
-    <%= f.text_field :fullname, :placeholder => "F U L L  N A M E", :class => 'response' %>
+    <%= f.text_field :fullname, :placeholder => "full name", :class => 'response' %>
   </p>
 
   <p>
-    <%= f.text_field :email, :placeholder => "E M A I L", :class => 'response' %>
+    <%= f.text_field :email, :placeholder => "email", :class => 'response' %>
   </p>
 
   <p>
-    <%= f.text_field :projectrepo, :placeholder => "P R O J E C T  R E P O", :class => 'response' %>
+    <%= f.url_field :projectrepo, :placeholder => "project repo", :class => 'response' %>
   </p>
 
   <p>
-    <%= f.text_field :projecturl, :placeholder => "P R O J E C T  U R L", :class => 'response' %>
+    <%= f.url_field :projecturl, :placeholder => "project url", :class => 'response' %>
   </p>
 
+                  <!-- rating areas -->
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        Using best practices for OOP:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        Modular development:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        Full-stack workflow understanding:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        Testing:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        Database knowledge:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        Debugging:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        Problem solving skills:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        Javascript:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        html:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        css:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        working on a team:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        self motivation:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        communication skills:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        your own energy level:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rating">
+      <p class="label">
+        intelligence / aptitude:
+      </p>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+  </div>
+
+                    <!-- submit button -->
+
+<div class="row">
   <p>
-    <%= f.submit "S U B M I T", :class => 'button' %>
+    <%= f.submit "submit", :class => 'button' %>
   </p>
+
+</div>
   <% end %>
 
 </div>
