@@ -1,33 +1,30 @@
+<div class="container">
+
+
 <%= form_for :form do |f| %>
   <p>
-    <%= f.label :fullname do %>
-      Full Name <br>
+    <%= f.label :fullname, "Full Name" %>
     <%= f.text_field :fullname %>
-    <% end %>
   </p>
 
   <p>
-    <%= f.label :email do %>
-    Email <br>
+    <%= f.label :email, "Email" %>
     <%= f.text_field :email %>
-    <% end %>
   </p>
 
   <p>
-    <%= f.label :projectrepo do %>
-    Project Repo <br>
+    <%= f.label :projectrepo, "Project Repo" %>
     <%= f.text_field :projectrepo %>
-    <% end %>
   </p>
 
   <p>
-    <%= f.label :projecturl do %>
-    Project Url <br>
+    <%= f.label :projecturl, "Project Url" %>
     <%= f.text_field :projecturl %>
-    <% end %>
   </p>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit "Submit" %>
   </p>
   <% end %>
+
+  </div>
