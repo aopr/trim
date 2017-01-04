@@ -1,30 +1,26 @@
+
 <div class="container">
 
-
-<%= form_for :form do |f| %>
-  <p>
-    <%= f.label :fullname, "Full Name" %>
-    <%= f.text_field :fullname %>
+  <%= form_for :form do |f| %>
+  <p class="name">
+    <%= f.text_field :fullname, :placeholder => "F U L L  N A M E", :class => 'response' %>
   </p>
 
   <p>
-    <%= f.label :email, "Email" %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :placeholder => "E M A I L", :class => 'response' %>
   </p>
 
   <p>
-    <%= f.label :projectrepo, "Project Repo" %>
-    <%= f.text_field :projectrepo %>
+    <%= f.text_field :projectrepo, :placeholder => "P R O J E C T  R E P O", :class => 'response' %>
   </p>
 
   <p>
-    <%= f.label :projecturl, "Project Url" %>
-    <%= f.text_field :projecturl %>
+    <%= f.text_field :projecturl, :placeholder => "P R O J E C T  U R L", :class => 'response' %>
   </p>
 
   <p>
-    <%= f.submit "Submit" %>
+    <%= f.submit "S U B M I T", :class => 'button' %>
   </p>
   <% end %>
 
-  </div>
+</div>
