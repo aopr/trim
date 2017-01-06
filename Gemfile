@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+# Pony: Send email in one command
+gem 'pony', '~> 1.11'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use postgres as the database for Active Record

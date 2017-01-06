@@ -25,15 +25,16 @@ body {
   font-weight: 500;
 }
 
+
 /*form box */
 
 .container {
   width: 49% !important;
-  max-width: 75%;
   text-align: center;
   background-color: #456990;
   margin-left: 26%;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /*form responses*/
@@ -43,12 +44,14 @@ input {
   padding: 1rem;
   background-color: #e4fde1;
   color: #e4fde1;
+  cursor: crosshair !important;
+  font-size: 2vh !important;
+  border: 0 !important;
 }
 
 .response {
-  color: #114b5f;
   text-transform: uppercase;
-  letter-spacing: .7rem;
+  letter-spacing: .5rem !important;
 }
 
 ::-webkit-input-placeholder {
@@ -67,7 +70,8 @@ input {
 p {
   padding-top: 1rem;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  color: #009691;
+  font-size: 2vh;
 }
 
 .name {
@@ -77,31 +81,42 @@ p {
 /*rating areas*/
 
 .row {
-  margin-left: 1.5rem !important;
-  width: 90%;
+  margin: 0 !important;
   padding-top: 1rem;
+  text-align: center;
 }
 
 .rating {
   padding-left: 3rem;
   text-align: center;
-
+  width: 85%;
 }
 
 .rating input {
   width: 11%;
+  height: auto;
   float: right;
+  margin-right: -4.5rem;
 }
 
 .rating p {
+  font-weight: 500 !important;
   color: #e4fde1;
   float: left;
-  font-size: 1.1vw;
-  padding: 0;
+  padding: 3%;
+  letter-spacing: .5rem !important;
 }
 
 .label {
   padding-top: 1.45rem !important;
+}
+
+.rating .response {
+  text-align: center;
+}
+
+.fssmall {
+  display: none;
 }
 
 /*form button*/
@@ -110,9 +125,213 @@ p {
   background-color: #f45b69;
   color: #e4fde1;
   margin-bottom: 1rem;
-  margin-left: 2.4rem;
+  margin-left: 0%;
   text-decoration: none;
-  width: 95% !important;
+  width: 85% !important;
   text-transform: uppercase;
-  letter-spacing: .7rem;
+  letter-spacing: .7rem !important;
+  cursor: crosshair !important;
+}
+
+.button:hover {
+  background-color: #00bcd4;
+}
+
+/*form answers*/
+
+strong {
+  color: #e4fde1;
+  font-weight: 500 !important;
+}
+
+strong p {
+  float: left !important;
+}
+
+body {
+  text-align: center;
+}
+
+/*back button*/
+
+.back {
+  font-family: museo-sans, sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  letter-spacing: .2rem !important;
+  color: #f45b69;
+}
+
+.back:hover {
+  cursor: crosshair;
+  text-decoration: none;
+  color: #00bcd4;
+}
+
+/*media query cell phones*/
+
+@media all and (max-width: 1160px) and (min-width: 960px) {
+  body {
+    font-size: 1.2vh !important;
+  }
+
+  .container {
+    width: 65% !important;
+    text-align: center;
+    background-color: #456990;
+    margin-left: 26%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0 !important;
+  }
+
+  input {
+    font-size: 1vh !important;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 750px) {
+  body {
+    font-size: 2vh;
+  }
+
+  .container {
+    width: 80% !important;
+    text-align: center;
+    background-color: #456990;
+    margin-left: 26%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0 !important;
+  }
+}
+
+@media all and (max-width: 749px) and (min-width: 625px) {
+  body {
+    font-size: 3.2vh !important;
+  }
+
+  .container {
+    width: 80% !important;
+    text-align: center;
+    background-color: #456990;
+    margin-left: 26%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0 !important;
+  }
+
+  input {
+    width: 85%;
+    padding: .8rem;
+    background-color: #e4fde1;
+    color: #e4fde1;
+    cursor: crosshair !important;
+    font-size: 2vh !important;
+  }
+
+  .row .rating {
+    margin-right: 1rem !important;
+    margin-left: -1rem !important;
+  }
+
+  .rating p {
+    font-weight: 500 !important;
+    color: #e4fde1;
+    float: left;
+    padding: 4%;
+    letter-spacing: .4rem !important;
+    margin-left: .5rem !important;
+  }
+
+  .rating input {
+    margin-right: -5rem;
+  }
+
+  .fullstackinput {
+    margin-left: -4rem;
+  }
+}
+
+@media all and (max-width: 624px) and (min-width: 416px) {
+  body {
+    font-size: 2vh !important;
+  }
+
+  .container {
+    width: 90% !important;
+    text-align: center;
+    background-color: #456990;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0 !important;
+    margin-left: 25% !important;
+    margin-right: auto !important;
+  }
+
+  input {
+    width: 85%;
+    padding: .8rem;
+    background-color: #e4fde1;
+    color: #e4fde1;
+    cursor: crosshair !important;
+    font-size: 2vh !important;
+  }
+
+  .row .rating {
+    margin-right: 1rem !important;
+    margin-left: -1rem !important;
+  }
+
+  #fullstackinput {
+    margin-left: -4rem;
+  }
+}
+
+@media all and (max-width: 415px) and (min-width: 200px) {
+  body {
+    font-size: 1.5vh !important;
+  }
+
+  .container {
+    width: 90% !important;
+    text-align: center;
+    background-color: #456990;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0 !important;
+
+  }
+
+  input {
+    width: 85%;
+    padding: .8rem;
+    background-color: #e4fde1;
+    color: #e4fde1;
+    cursor: crosshair !important;
+    font-size: 1.5vh !important;
+  }
+
+  .row .rating {
+    margin-right: 1rem !important;
+    margin-left: -1rem !important;
+  }
+
+  .rating input {
+    margin-right: -3rem;
+  }
+
+  .fullstack {
+    word-wrap: break-word !important;
+    display: none;
+  }
+
+  .fullstackinput {
+    margin-left: -4rem;
+  }
+
+  .fssmall {
+    display: block !important;
+  }
 }

@@ -1,10 +1,10 @@
-                    <!-- form -->
+<!-- form -->
 
 <div class="container">
 
-                  <!-- form responses -->
+  <!-- form responses -->
 
-  <%= form_for :form do |f| %>
+  <%= form_for :form, url: forms_path do |f| %>
   <p class="name">
     <%= f.text_field :fullname, :placeholder => "full name", :class => 'response' %>
   </p>
@@ -21,14 +21,20 @@
     <%= f.url_field :projecturl, :placeholder => "project url", :class => 'response' %>
   </p>
 
-                  <!-- rating areas -->
-
+  <!-- rating areas -->
   <div class="row">
     <div class="rating">
+      <div class='fullstack'>
       <p class="label">
         Using best practices for OOP:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+    </div>
+    <div class='fssmall'>
+    <p class="label">
+      best oop practices:
+    </p>
+  </div>
+      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -37,16 +43,25 @@
       <p class="label">
         Modular development:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <div class="answer">
+        <%= f.text_field :modular, :placeholder => "#", :class => 'response ' %>
+      </div>
     </div>
   </div>
 
   <div class="row">
     <div class="rating">
-      <p class="label">
-        Full-stack workflow understanding:
-      </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <div class='fullstack'>
+        <p class="label">
+          Full-stack workflow understanding:
+        </p>
+      </div>
+      <div class='fssmall'>
+        <p class="label">
+          Full-stack understanding:
+        </p>
+      </div>
+      <%= f.text_field :fullstack, :placeholder => "#", :class => 'response  fullstackinput' %>
     </div>
   </div>
 
@@ -55,7 +70,7 @@
       <p class="label">
         Testing:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :testing, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -64,7 +79,7 @@
       <p class="label">
         Database knowledge:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :database, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -73,7 +88,7 @@
       <p class="label">
         Debugging:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :debugging, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -82,7 +97,7 @@
       <p class="label">
         Problem solving skills:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :problemsolving, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -91,7 +106,7 @@
       <p class="label">
         Javascript:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :js, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -100,7 +115,7 @@
       <p class="label">
         html:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :html, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -109,7 +124,7 @@
       <p class="label">
         css:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :css, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -118,7 +133,7 @@
       <p class="label">
         working on a team:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :teamwork, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -127,7 +142,7 @@
       <p class="label">
         self motivation:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :motivation, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -136,7 +151,7 @@
       <p class="label">
         communication skills:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :communication, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -145,7 +160,7 @@
       <p class="label">
         your own energy level:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :energy, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
@@ -154,18 +169,19 @@
       <p class="label">
         intelligence / aptitude:
       </p>
-      <%= f.text_field :bestpractice, :placeholder => "#", :class => 'response' %>
+      <%= f.text_field :intelligence, :placeholder => "#", :class => 'response ' %>
     </div>
   </div>
 
-                    <!-- submit button -->
+  <!-- submit button -->
 
-<div class="row">
-  <p>
-    <%= f.submit "submit", :class => 'button' %>
-  </p>
+  <div class="row">
+    <p>
+      <%= f.submit "submit", :class => 'button' %>
+      <!-- <%# Pony.mail(:to => 'drea327@gmail.com', :from => 'andrea.ocarina@gmail.com', :subject => 'hi', :body => 'Hello there.') %> -->
+    </p>
 
-</div>
+  </div>
   <% end %>
 
 </div>
